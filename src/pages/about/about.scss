@@ -1,0 +1,193 @@
+@import "../../assets/styles/variables";
+
+
+section.about-page{
+  padding-top: 0;
+  padding-bottom: 120px;
+
+  .decoration-3 {
+    background-image: url("../../static/images/decoration-8.svg");
+    top: unset;
+    bottom: -300px;
+    left: unset;
+    right: 0;
+    width: 396px;
+    height: 463px;
+    @media (max-width: $bp-lg) {
+      width: 316px;
+      height: 370px;
+      bottom: -250px;
+    }
+    @media (max-width: $bp-sm) {
+      width: 316px;
+      height: 370px;
+      bottom: -270px;
+      right: -20px;
+    }
+  }
+
+
+  .section__top-block {
+    position: relative;
+    .bg-color {
+      position: absolute;
+      top: 0;
+      border-radius: 15px;
+      left: 0;
+      width: 100%;
+      background-color: $bg-color-1;
+    }
+
+    .section__top-block-content {
+      position: relative;
+
+
+      .section__top-block-main-part {
+        position: relative;
+        z-index: 1;
+        .title {
+          padding-top: 68px;
+          padding-bottom: 52px;
+          color: white;
+          @media (max-width: $bp-lg) {
+            padding-right: 40px;
+          }
+          @media (max-width: $bp-sm) {
+            padding-right: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+          }
+
+          h1 {
+            margin-bottom: 32px;
+            color: white;
+          }
+          p {
+            color: white;
+          }
+        }
+
+      }
+
+      .section__top-block-secondary-part {
+        position: relative;
+        z-index: 1;
+        .content {
+          border-radius: 0;
+          margin-top: 112px;
+          @media (max-width: 1400px) {
+            max-width: 580px;
+            margin-top: 0;
+          }
+          .main-image {
+            border-radius: 15px;
+            width: 100%;
+            margin-bottom: 55px;
+            @media (max-width: 1400px) {
+              margin-bottom: 60px;
+            }
+            @media (max-width: $bp-sm) {
+              margin-bottom: 40px;
+            }
+          }
+          .description {
+            @media (max-width: $bp-sm) {
+              padding-left: 85px;
+            }
+            .inline-circle {
+              margin-right: 8px;
+            }
+          }
+
+        }
+        @media (max-width: 1400px) {
+          margin-top: 80px;
+        }
+        @media (max-width: $bp-sm) {
+          margin-top: 40px;
+        }
+
+      }
+    }
+  }
+
+
+
+  .section__top-block-other {
+    img {
+      width: 100%;
+    }
+  }
+
+
+  .section__wide-content-with-link {
+    > a {
+      color: $color-primary;
+      line-height: 24px;
+      @media (max-width: $bp-sm) {
+        line-height: 18px;
+      }
+    }
+    margin-top: 88px;
+    ul {
+      @media (max-width: $bp-xl) {
+        margin-top: -10px;
+      }
+      li {
+        display: flex;
+        margin-bottom: 50px;
+        @media (max-width: $bp-xl) {
+          flex-direction: column-reverse;
+          margin-bottom: 60px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .text-container {
+          width: 580px;
+          margin-right: 150px;
+          @media (max-width: $bp-xl) {
+            width: 100%;
+            margin-right: 0;
+          }
+          h2 {
+            display: block;
+            position: relative;
+            margin-bottom: 20px;
+            &:before {
+              content: ' ';
+              position: absolute;
+              left: -32px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              background-color: $color-primary;
+            }
+          }
+        }
+        .image-container {
+          img {
+            width: 150px;
+            @media (max-width: $bp-xl) {
+              width: 75px;
+              margin-bottom: 20px;
+            }
+          }
+          svg {
+            width: 150px;
+            height: 140px;
+            @media (max-width: $bp-xl) {
+              width: 75px;
+              height: 70px;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

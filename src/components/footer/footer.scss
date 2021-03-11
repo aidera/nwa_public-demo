@@ -1,0 +1,235 @@
+@import "../../assets/styles/variables";
+
+footer {
+  padding: 50px 0 48px 0;
+  background-color: $bg-color-1;
+  color: white;
+  @media (max-width: $bp-lg) {
+    padding-top: 39px;
+  }
+  @media (max-width: $bp-md) {
+    flex-direction: column;
+    padding: 39px 0 50px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    > div {
+      width: 50%;
+      @media (max-width: $bp-md) {
+        width: 100%;
+      }
+    }
+
+    > div:nth-child(2n) {
+      justify-content: flex-end;
+    }
+
+    > div:nth-child(1), > div:nth-child(2) {
+      margin-bottom: 86px;
+      @media (max-width: $bp-xl) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  * {
+    color: white;
+    @media (max-width: $bp-xl) {
+      line-height: 18px;
+    }
+  }
+
+
+
+  .nav-link {
+    color: $text-color-4;
+  }
+
+  a {
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  .addresses {
+    display: flex;
+    width: 60%;
+
+    .nav-link {
+      width: 178px;
+      padding-right: 88px;
+      flex-shrink: 0;
+      @media (max-width: $bp-md) {
+        padding-right: 25px;
+        width: 110px;
+      }
+      @media (max-width: $bp-sm) {
+        padding-right: 0;
+        width: 85px;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        list-style: none;
+        display: block;
+        position: relative;
+        padding-left: 32px;
+        margin-bottom: 23px;
+        max-width: 418px;
+        width: 100%;
+        @media (max-width: $bp-lg) {
+          max-width: 287px;
+          padding-left: 27px;
+          margin-bottom: 15px;
+        }
+        @media (max-width: $bp-md) {
+          max-width: 100%;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          content: ' ';
+          background-color: white;
+          border: none;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          position: absolute;
+          left: 0;
+          top: 8px;
+          @media (max-width: $bp-xl) {
+            top: 4px;
+          }
+          @media (max-width: $bp-md) {
+            top: 3px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    @media (max-width: $bp-xl) {
+      width: 40%;
+    }
+    @media (max-width: $bp-md) {
+      width: 100%;
+      justify-content: flex-start !important;
+    }
+
+    a {
+      margin-left: 50px;
+      margin-bottom: 12px;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      @media (max-width: $bp-lg) {
+        margin-left: 22px;
+      }
+      @media (max-width: $bp-md) {
+        margin-left: 0;
+        margin-right: 29px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+
+      img {
+        max-height: 72px;
+        @media (max-width: $bp-xl) {
+          max-height: 37px;
+        }
+        @media (max-width: $bp-md) {
+          max-height: 50px;
+        }
+      }
+    }
+  }
+
+
+  .contacts {
+    display: flex;
+    white-space: nowrap;
+    @media (max-width: $bp-xl) {
+      flex-direction: column;
+    }
+
+    > * {
+      margin-right: 29px;
+      @media (max-width: $bp-xl) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .others {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    @media (max-width: $bp-xl) {
+      align-self: flex-end;
+    }
+    @media (max-width: $bp-md) {
+      margin-top: 30px;
+      justify-content: space-between !important;
+      flex-wrap: wrap;
+    }
+
+    * {
+      color: $text-color-4;
+
+    }
+
+    a {
+      white-space: nowrap;
+    }
+
+    .nav-link {
+      @media (max-width: $bp-md) {
+        margin-right: 10px;
+      }
+    }
+
+    div {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      margin-left: 30px;
+      @media (max-width: $bp-xl) {
+        margin-left: 75px;
+      }
+      @media (max-width: $bp-md) {
+        margin-left: 0;
+      }
+
+      span {
+        margin-right: 18px;
+        white-space: nowrap;
+      }
+
+    }
+
+  }
+
+}

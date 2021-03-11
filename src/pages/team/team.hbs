@@ -1,0 +1,283 @@
+{{#> ../../components/layout/layout
+        title="Team page"
+        keywords="keyword 1, keyword 2"
+        description="Team page description"
+}}
+
+
+    <script>
+        // !TODO: Убрать ВЕСЬ блок кода, при заливке на Битрикс или другую CMS!
+        // При этом, необходимо чтобы на team странице в хедере у пункта меню team
+        // был класс active. Как у обычного меню, так и раскрывающегося мобльного
+
+        const desktopLinks = document.querySelectorAll("header nav a");
+        desktopLinks.forEach((link, i) => {
+            if (i === 1) {
+                link.classList.add("active");
+            }
+        });
+
+        const mobileLinks = document.querySelectorAll("#mobile-menu nav a");
+        mobileLinks.forEach((link, i) => {
+            if (i === 1) {
+                link.classList.add("active");
+            }
+        });
+
+    </script>
+
+
+    <section class="simple-page team-page">
+
+        <div class="simple-page__decoration decoration-1"></div>
+        <div class="simple-page__decoration decoration-2"></div>
+
+        <div class="container">
+            <div class="section__header">
+                <a href="#">go back</a>
+                <div class="title">
+                    <h1>Meet the team</h1>
+                </div>
+            </div>
+
+            <div class="section__content-with-indent">
+
+                <div class="person">
+                    <div class="title">
+                        <div class="name">Oleg Leonov,</div>
+                        <div class="role">CEO</div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/worker-1.png" alt="Oleg Leonov">
+                    </div>
+                    <div class="description">
+                        <div class="full-content">He works across Retail, Financial and Transportation specialty teams.
+                            Oleg provides senior counsel to the largest Russian and international companies.
+                            <br><br>He specialises in attracting foreign investment in Russia, high-profile public
+                            affairs and reputation management assignments, as well as special situations and litigation
+                            support. Oleg has advised on a number of benchmark IPO and M&A deals in Russia and the CIS,
+                            including Sberbank’s SPO. His clients include Sberbank, Morgan Stanley, EuroChem,
+                            Promsvyazbank, Roscongress and others.
+                            <br><br>Oleg started his career at one of the leading Russian business titles, Expert. In
+                            2003 he joined RBC Holding as Deputy Editor of Media Projects where he was responsible for
+                            the launch of RBC’s first analytical editions – the online business newspaper RBC Daily and
+                            the monthly magazine RBC. Before joining FTI Consulting and further NW Advisors, Oleg was a
+                            Deputy Editor at REN TV channel.
+                            <br><br>Oleg graduated from the Moscow State University.
+                        </div>
+                        <div class="short-content">
+                            He works across Retail, Financial and Transportation specialty teams.
+                        </div>
+                        <div class="open-full-content">
+                            <button>read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <div class="title">
+                        <div class="name">Dmitry Chmyr,</div>
+                        <div class="role">Head of IT solutions</div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/worker-3.png" alt="Dmitry Chmyr">
+                    </div>
+                    <div class="description">
+                        <div class="full-content">Dmitry Chmyr, Head of IT solutions, has been working in IT since 2000.
+                            Having started as a programmer, by 2004 Dmitry was head of a department and successfully
+                            implemented Microsoft Enterprise Project Management Solution in a large systems integrator –
+                            Optima company. A centralized project management in Microsoft Project Server and extended
+                            OLAP-reporting were rare at the time. Since then Dmitry has successfully executed over 50
+                            large IT projects for clients like Volkswagen, Audi, Gazprom, ING Bank, Sheremetyevo
+                            International Airport, Lamoda, Ile de Beaute etc. Apart from technical issues he has been
+                            involved in organizational modelling and has gained skills and experience in such hi-tech
+                            areas as artificial intelligence and machine learning, cryptocurrencies, online lending, big
+                            data.
+                            <br><br>Dmitry graduated from Bauman Moscow State Technical University’s faculty of
+                            informatics and control systems. He is the author of a few books approved by the Russian
+                            Ministry of Education and Science as university coursebooks.
+                        </div>
+                        <div class="short-content">
+                            Dmitry Chmyr, Head of IT solutions, has been working in IT since 2000. Having started as a
+                            programmer
+                        </div>
+                        <div class="open-full-content">
+                            <button>read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <div class="title">
+                        <div class="name">Olga Lundquist,</div>
+                        <div class="role">Senior Director</div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/worker-2.png" alt="Olga Lundquist">
+                    </div>
+                    <div class="description">
+                        <div class="full-content">Olga joined NW Advisors in 2013. She advises clients on financial
+                            communications, investor relations, and international media engagement. Among her present
+                            and former clients are Rosneft, Morgan Stanley, DIXY Group, Norilsk Nickel, ATON, EuroChem,
+                            Tinkoff Credit Systems, Ruspetro, ACCOR, NYSE, Russian Grids and Rushydro.
+                            <br><br>
+                            For several years running, Olga provided advice to Norilsk Nickel, the world's largest
+                            producer of nickel and palladium, on international media around the Strategy Day in London.
+                            <br><br>
+                            Before joining NW Advisors, Olga worked as a Senior IR specialist in Metalloinvest. Earlier
+                            she gained relevant experience in financial industry, having worked in a proprietary trading
+                            investment fund, Swedbank and one of the largest Russian insurance companies Ingosstrakh.
+                            <br><br>
+                            Olga graduated from the Moscow State Linguistic University with a degree in Economics, major
+                            in accounting, financial analysis and audit. She speaks English and German.
+                        </div>
+                        <div class="short-content">
+                            Olga joined NW Advisors in 2013. She advises clients on financial communications
+                        </div>
+                        <div class="open-full-content">
+                            <button>read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <div class="title">
+                        <div class="name">Victoria Afonina,</div>
+                        <div class="role">Senior Director</div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/worker-5.png" alt="Victoria Afonina">
+                    </div>
+                    <div class="description">
+                        <div class="full-content">Victoria has 10 year of experience in corporate communications and
+                            multi-industry background. Today she manages corporate communications and media relations
+                            strategies for a number of clients, she is also in charge of communications support for
+                            large-scale events. Among her clients are AccorHotels, Lenta, Moscow Urban Forum, Bombardier
+                            Commercial Aircraft at MAKS 2013 and Bombardier Business Aircraft at Jet Expo 2013, Lombard
+                            Odier and other international companies.
+                            <br><br>
+                            Most recently Victoria managed press office services for Sberbank CIB Metals and Mining
+                            Conference in Moscow. Prior to that event she organized communications support for the
+                            Moscow Urban Forum 2016, as she’s been in charge of this client since 2013.
+                            <br><br>
+                            Prior to joining NW Advisors, Victoria worked as an Account Manager at Fleishman-Hillard
+                            Vanguard in CPA department with clients like IATA, P&G, McDonald’s, Coca-Cola-Hellenic and
+                            Google.
+                            <br>Victoria started her career in 2007 as an Account Executive at the international PR
+                            agency, Action Global Communications. She managed the launch of the first low-cost airline
+                            in Russia Avianova and headed the press office of Monaco Tourism Office in Russia.
+                            <br><br>
+                            Victoria is a graduate of the Russian State University for Humanities with a degree in
+                            Public Relations.
+                        </div>
+                        <div class="short-content">
+                            Victoria has 10 year of experience in corporate communications and multi-industry background
+                        </div>
+                        <div class="open-full-content">
+                            <button>read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <div class="title">
+                        <div class="name">Evgenia Efimova,</div>
+                        <div class="role">Senior Director</div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/worker-7.png" alt="Evgenia Efimova">
+                    </div>
+                    <div class="description">
+                        <div class="full-content">Evgenia joined NW Advisors in 2019.
+                            <br><br>
+                            She has over 7 years of experience in PR, corporate reputation management and
+                            consumer-related activities for financial and industrial companies. She previously worked at
+                            Ketchum and Grayling communications agencies. Her Clients included HSBC, Western Union, VTB
+                            Capital, BASF, OTIS and Samsung.
+                            <br><br>
+                            Now Evgenia is working with Sberbank, Mastercard and General Motors amplifying as well her
+                            PR experience with PA practice.
+                            <br><br>
+                            Evgenia graduated from Moscow State University of International Relations and speaks
+                            English, Italian and a bit of French.
+                        </div>
+                        <div class="short-content">
+                            Evgenia joined NW Advisors in 2019. She has over 7 years of experience in PR
+                        </div>
+                        <div class="open-full-content">
+                            <button>read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <div class="title">
+                        <div class="name">Venera Masumova,</div>
+                        <div class="role">Senior Director</div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/worker-4.png" alt="Venera Masumova">
+                    </div>
+                    <div class="description">
+                        <div class="full-content">Venera is a Senior Director at NW Advisors. She joined the company in
+                            2016. She is in charge of Corporate Communications for a number of Clients including
+                            Roscongress.
+                            <br><br>
+                            She has successfully managed international communications during Saint Petersburg Economic
+                            Forum and Eastern Economic Forum in 2016 and 2017.
+                            <br><br>
+                            Before joining NW Advisors Venera worked as an Account Manager at Grayling Eurasia,
+                            specializing in crisis and corporate communications. Her clients included eBay, PayPal,
+                            Skype and a number of IT and Telecom companies.
+                            <br><br>
+                            Venera hold a degree with honors in Politology from Moscow State Linguistic University.
+                        </div>
+                        <div class="short-content">
+                            Venera is a Senior Director at NW Advisors. She joined the company in 2016
+                        </div>
+                        <div class="open-full-content">
+                            <button>read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <div class="title">
+                        <div class="name">Andrey Beletskiy,</div>
+                        <div class="role">Director</div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/worker-6.png" alt="Andrey Beletskiy">
+                    </div>
+                    <div class="description">
+                        <div class="full-content">Andrey joined NW Advisors in 2019. Prior to joining the agency Andrey
+                            was the head of Russian newspaper bureau in Germany, Frankfurt am Main.
+                            <br><br>
+                            He worked with corporate and brand communications in Ketchum Moscow from 2008 to 2012 with
+                            such clients as Pioneer Investments, Philips, Audi, Skoda, etc.
+                            <br><br>
+                            <br>He speaks English and German.
+                            Andrey graduated from Moscow State Institute of International Relations.
+                        </div>
+                        <div class="short-content">
+                            Andrey joined NW Advisors
+                            in 2019. Prior to joining the agency
+                        </div>
+                        <div class="open-full-content">
+                            <button>read more</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+{{/../../components/layout/layout}}
+
+

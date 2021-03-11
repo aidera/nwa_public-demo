@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables";
+
+
+section.analytics-page{
+  padding-bottom: 120px;
+
+  .section__header {
+    margin-bottom: 15px;
+  }
+
+  .section__top-block-secondary-part {
+    margin-top: 60px;
+    @media (max-width: 1400px) {
+      margin-top: 40px;
+    }
+  }
+
+  .section__top-block-other {
+    img {
+      width: 100%;
+    }
+  }
+
+
+  .analytics-wide-content {
+    margin-top: 49px;
+    @media (max-width: $bp-sm) {
+      padding-left: 0;
+    }
+  }
+
+
+}

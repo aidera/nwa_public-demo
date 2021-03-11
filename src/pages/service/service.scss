@@ -1,0 +1,101 @@
+@import "../../assets/styles/variables";
+
+
+section.service-page {
+
+  .section__top-block {
+    margin-bottom: 75px;
+    @media (max-width: $bp-sm) {
+      margin-bottom: 60px;
+    }
+    .section__top-block-content {
+
+
+      .section__top-block-secondary-part {
+        @media (max-width: 1400px) {
+          display: none;
+        }
+        .other {
+          max-width: 430px;
+          width: 100%;
+          min-width: 350px;
+          .other-container {
+            padding: 56px 30px 74px 50px;
+            background-color: $bg-color-2;
+            border-radius: 15px;
+          }
+          .other-links {
+            margin-top: 66px;
+
+            li {
+              position: relative;
+              padding-left: 32px;
+              display: block;
+              margin-bottom: 25px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+              &::before {
+                content: ' ';
+                width: 12px;
+                height: 12px;
+                background-color: white;
+                position: absolute;
+                left: 0;
+                top: 8px;
+                border-radius: 50%;
+              }
+
+              a {
+                color: white;
+                font-size: 20px;
+                line-height: 28px;
+                transition: $transition-1;
+                font-weight: bold;
+                &:hover {
+                  color: $text-color-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .pre-footer {
+    display: none;
+    @media (max-width: 1400px) {
+      display: block;
+    }
+  }
+  .pre-footer__content {
+    padding: 47px 90px 34px 90px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    @media (max-width: $bp-md) {
+      padding: 40px 20px 30px 20px;
+    }
+
+
+
+    .post-card {
+      width: 30%;
+      margin-bottom: 50px;
+
+      @media (max-width: $bp-lg) {
+        width: 45%;
+      }
+      @media (max-width: $bp-md) {
+        width: 100%;
+        margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+    }
+  }
+}

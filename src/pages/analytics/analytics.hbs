@@ -1,0 +1,122 @@
+{{#> ../../components/layout/layout
+        title="Analytics page"
+        keywords="keyword 1, keyword 2"
+        description="Analytics page description"
+}}
+
+
+    <script>
+        // !TODO: Убрать ВЕСЬ блок кода, при заливке на Битрикс или другую CMS!
+        // При этом, необходимо чтобы на analytics странице в хедере у пункта меню analytics
+        // был класс active. Как у обычного меню, так и раскрывающегося мобльного
+
+        const desktopLinks = document.querySelectorAll("header nav a");
+        desktopLinks.forEach((link, i) => {
+            if (i === 2) {
+                link.classList.add("active");
+            }
+        });
+
+        const mobileLinks = document.querySelectorAll("#mobile-menu nav a");
+        mobileLinks.forEach((link, i) => {
+            if (i === 2) {
+                link.classList.add("active");
+            }
+        });
+
+    </script>
+
+
+    <section class="simple-page analytics-page">
+
+        <div class="simple-page__decoration decoration-1"></div>
+        <div class="simple-page__decoration decoration-2"></div>
+
+        <div class="container">
+
+            <div class="section__header">
+                <a href="#">go back</a>
+                <div class="title">
+                    <div class="post-info">
+                        <p class="date">September 28, 2020</p>
+                        <div class="creator">
+                            <span></span>
+                            <p>by Andrey Beletskiy</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="section__top-block">
+
+                <a class="section__top-block-link"></a>
+
+                <div class="section__top-block-content">
+
+                    <div class="section__top-block-main-part">
+<!--                        <div class="post-info">-->
+<!--                            <p class="date">September 28, 2020</p>-->
+<!--                            <div class="creator">-->
+<!--                                <span></span>-->
+<!--                                <p>by Andrey Beletskiy</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div class="title">
+                            <h1>Macro: Weekly Political Compass 9.28.20</h1>
+                        </div>
+                        <div class="content">
+                            <p class="large">
+                                China’s biggest chipmaker will be affected by new US export control
+                                rules. Optimism is returning to the post-Brexit EU-UK talks. In
+                                Argentina, the economic situation will remain highly unsettled ahead of
+                                an imminent IMF staff visit. Spain’s top court has upheld a temporary
+                                ban from public office for Catalonia’s regional president. In the
+                                disputed region of Nagorno-Karabakh clashes have escalated between
+                                Armenia and Azerbaijan.
+                            </p>
+                            <br>
+                            <br>
+                            <p>
+                                Meanwhile, in <a href="#">Malaysia</a> opposition leader Anwar Ibrahim might get his
+                                audience with the king, <a href="#">Belgium</a> might get a new government, Brazil’s
+                                government could create a new tax on transactions, and in <a href="#">South Africa</a>
+                                unemployment is expected to continue increasing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section__top-block-secondary-part">
+                        <img class="content" src="./images/analytics-1.png" alt="Macro: Weekly Political Compass 9.28.20">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="section__content-with-indent analytics-wide-content">
+                <figure class="chart">
+                    <figcaption>Varous Table example №1</figcaption>
+                    <img src="./images/chart-1.svg" alt="Varous Table example №1">
+                </figure>
+                <br>
+                <br>
+                <figure class="chart">
+                    <figcaption>Varous Table example №2</figcaption>
+                    <img src="./images/chart-2.svg" alt="Varous Table example №2">
+                </figure>
+                <div class="next-link"><a href="#">to next article</a></div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+{{/../../components/layout/layout}}
+
+

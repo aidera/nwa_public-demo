@@ -1,0 +1,454 @@
+{{#> ../../components/layout/layout
+        title="Index page"
+        keywords="keyword 1, keyword 2"
+        description="Index page description"
+}}
+
+
+    <script>
+        // !TODO: Убрать ВЕСЬ блок кода, при заливке на Битрикс или другую CMS!
+        // При этом, необходимо чтобы на index странице у хедера был класс .dark
+        // и внутри header картинка стала не logo.svg, а logo-dark.svg
+
+        document.querySelector("header").classList.add("dark");
+        document.querySelector("header").classList.add("with-start-animation");
+    </script>
+
+
+    <section class="welcome">
+
+        <div class="container">
+            <div class="bg-image">
+            <svg class="spiral" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 0 546 600" xml:space="preserve">
+                <circle fill="#ED493B" cx="12" cy="112" r="3.5"/>
+                <path stroke="#ED493B" fill="none" d="M10.2,112.6c0,0,18-28,48-26c0,0,33,3,29,57c-2,36-27,48-32,48c-2,0-20-7-10-39c8.1-26,41-80,79-75
+                    c28,3,48,27,43,73c0,0-3,50-36,87c-14,13-19,14-26,14s-24-7-23-40c0.7-22.8,13.5-62.4,31-86c13-17.5,36.9-47.4,67-56
+                    c11.1-3.2,32-5,49,14c8.2,9.1,16,20,17,46c0,0,3,33-8,73s-29,66-40,81s-30,27-45,28c-17,1-31-20-30-45c1-39,14-89,41-129
+                    c0,0,32.2-61.1,86-80c15.1-5.3,43-6,60,22c0,0,13,18,14,65s-18,105-36,140s-53,83-84,88s-37-28-38-36c0,0-9.9-38.3,14-107
+                    c32-81,66.7-137,123-176c11-7,36-19,60-9c34,14,37,72.9,37,92c0,32-7,68-18,105c0,0-35,123-102,176c-60,47-73.8-8-75-28
+                    c-2.5-42.3,7.5-104.3,36-168c20.1-44.9,60.2-121.4,109-164c14.5-12.6,34-34.1,69-34c26,0.1,49.1,33,51,75c2,44,0,96-25,165
+                    c0,0-28,90-76,157c0,0-47.1,71.3-89,77c-37,5-40.5-45.9-40-65c1.1-42.7,6.5-89.6,36-167c16.9-44.4,52-119,97-178c0,0,64-86,112-85
+                    s50,73,50,73s8.6,83.9-38,210c-47,127-100,193-100,193s-47,68-88,76c-49,10-46-81-46-81"/>
+            </svg>
+            </div>
+        </div>
+        <div class="container welcome__content">
+            <div class="section__header">
+                <a href="#">learn more</a>
+                <div class="title">
+                    <span class="h1-animation-container">
+                        <h1>NW Advisors is a strategic communications pioneer in Russia and the CIS</h1>
+                    </span>
+                </div>
+            </div>
+
+            <div class="section__content-with-indent">
+                <p>Because everything starts from a point</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="partner-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="./images/partner-3.png" alt="Partner 1"/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/partner-4.png" alt="Partner 2"/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/partner-5.png" alt="Partner 3"/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/partner-6.png" alt="Partner 4"/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/partner-7.png" alt="Partner 5"/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/partner-8.png" alt="Partner 6"/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./images/partner-9.png" alt="Partner 7"/></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-services">
+        <div class="container">
+            <div class="section__header">
+                <div class="quote"></div>
+                <a href="./services.html">all services</a>
+                <div class="title">
+                    <h2 class="h1">Our services are the best practise of strategic communications </h2>
+                </div>
+            </div>
+            <div class="section__content-with-indent">
+                <ul class="services-list">
+                    <li>
+                        <a href="#">
+                            <svg width="50" height="21" viewBox="0 0 50 21" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.666626 20.3333L16.9418 4.04227L31.4543 18.5715L48.2441 1.76215"
+                                      stroke="#506A88"
+                                      stroke-miterlimit="10"/>
+                                <path d="M48.7157 7.61523V1.33331H42.3547" stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Financial communications</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="50" height="48" viewBox="0 0 50 48" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 2.66669V45.0176H46.2986" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M10.166 40.8024C9.12231 40.8024 8.27771 39.9568 8.27771 38.9119V27.186C8.27771 26.141 9.12231 25.2954 10.166 25.2954H12.7481C13.7918 25.2954 14.6365 26.141 14.6365 27.186V38.9151C14.6365 39.96 13.7918 40.8056 12.7481 40.8056H10.166V40.8024Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M19.5084 40.8024C18.4646 40.8024 17.62 39.9568 17.62 38.9118V22.048C17.62 21.0063 18.4646 20.1575 19.5084 20.1575H22.0904C23.1341 20.1575 23.9787 21.0031 23.9787 22.048V38.9151C23.9787 39.96 23.1341 40.8056 22.0904 40.8056H19.5084V40.8024Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M28.9693 40.8024C27.9256 40.8024 27.0809 39.9568 27.0809 38.9119V14.1515C27.0809 13.1065 27.9256 12.2609 28.9693 12.2609H31.5545C32.5983 12.2609 33.4429 13.1065 33.4429 14.1515V38.9151C33.4429 39.96 32.5983 40.8056 31.5545 40.8056H28.9693V40.8024Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M38.5524 40.8024C37.5119 40.8024 36.6672 39.9568 36.6672 38.9119V7.0587C36.6672 6.01375 37.5119 5.16815 38.5524 5.16815H41.1376C42.1782 5.16815 43.0228 6.01375 43.0228 7.0587V38.9151C43.0228 39.96 42.1782 40.8056 41.1376 40.8056H38.5524V40.8024Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.6672 8.74665L40.6078 5.17133" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.5195 12.2609L43.026 6.35779" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.6672 15.5115L43.026 9.74017" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.6672 18.8939L43.1063 13.0454" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.6672 22.2731L43.1063 16.431" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.6672 25.6555L43.026 19.8874" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.6672 29.0347L43.026 23.2666" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.6672 32.4171L43.1545 26.5333" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.6672 35.7995L43.026 30.0314" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M36.6158 39.2302L43.026 33.4138" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M38.6071 40.8024L43.026 36.793" stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Global risks</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="50" height="47" viewBox="0 0 50 47" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.0939 44.9683C4.93776 44.9683 4 44.0294 4 42.872V12.3145C4 11.157 4.93776 10.2182 6.0939 10.2182H44.0634C45.2196 10.2182 46.1573 11.157 46.1573 12.3145V42.872C46.1573 44.0294 45.2196 44.9683 44.0634 44.9683H6.0939Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M46.1541 16.0281V22.7993C46.1541 23.9568 45.2164 24.8957 44.0602 24.8957H6.0939C4.93776 24.8957 4 23.9568 4 22.7993V16.5457"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M16.1522 10.2182V5.09633C16.1522 3.93885 17.09 3 18.2461 3H31.9046C33.0608 3 33.9985 3.93885 33.9985 5.09633V10.2182"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M28.6611 24.8957C28.6611 26.8795 27.0554 28.4839 25.0771 28.4839C23.0956 28.4839 21.493 26.8763 21.493 24.8957C21.493 22.9119 23.0988 21.3075 25.0771 21.3075C27.0554 21.3075 28.6611 22.9119 28.6611 24.8957Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Corporate communications</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="50" height="44" viewBox="0 0 50 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.9452 22.1754C39.9452 33.8692 37.1897 43.3509 33.792 43.3509C30.3942 43.3509 27.642 33.8692 27.642 22.1754C27.642 10.4817 30.3974 1 33.792 1C37.1897 1 39.9452 10.4817 39.9452 22.1754Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M44.39 22.1754C44.39 30.5704 42.4117 37.377 39.9742 37.377C37.5366 37.377 35.5583 30.5704 35.5583 22.1754C35.5583 13.7805 37.5366 6.97388 39.9742 6.97388C42.4149 6.97388 44.39 13.7805 44.39 22.1754Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M48.809 22.1754C48.809 30.5704 46.8307 37.377 44.3932 37.377C41.9525 37.377 39.9774 30.5704 39.9774 22.1754C39.9774 13.7805 41.9557 6.97388 44.3932 6.97388C46.8307 6.97388 48.809 13.7805 48.809 22.1754Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M10.2806 22.1754C10.2806 27.6477 8.99283 32.0815 7.40314 32.0815C5.81345 32.0815 4.52563 27.6477 4.52563 22.1754C4.52563 16.7064 5.81345 12.2693 7.40314 12.2693C8.99283 12.2693 10.2806 16.7064 10.2806 22.1754Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M5.00733 16.6838H2.92949C2.04954 16.6838 1.33337 19.1403 1.33337 22.1754C1.33337 25.2074 2.04633 27.667 2.92949 27.667H4.85639"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M7.40308 32.0944C7.40308 32.0944 20.3872 31.0205 32.456 42.8622"
+                                      stroke="#506A88"
+                                      stroke-miterlimit="10"/>
+                                <path d="M7.40308 12.2565C7.40308 12.2565 20.3872 13.3304 32.456 1.48871"
+                                      stroke="#506A88"
+                                      stroke-miterlimit="10"/>
+                                <path d="M35.539 22.1755C35.539 26.217 34.7362 29.4933 33.7502 29.4933C32.7643 29.4933 31.9614 26.217 31.9614 22.1755C31.9614 18.1339 32.7643 14.8576 33.7502 14.8576C34.7394 14.8576 35.539 18.1339 35.539 22.1755Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Communication support of events</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="46" height="39" viewBox="0 0 46 39" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.76052 38.4112C1.60438 38.4112 0.666626 37.4724 0.666626 36.3149V5.75746C0.666626 4.59998 1.60438 3.66113 2.76052 3.66113H40.73C41.8862 3.66113 42.8239 4.59998 42.8239 5.75746V36.3149C42.8239 37.4724 41.8862 38.4112 40.73 38.4112H2.76052Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M2.97888 3.42963C2.97888 2.27215 3.91664 1.33331 5.07277 1.33331H43.0423C44.1984 1.33331 45.1362 2.27215 45.1362 3.42963V33.9871C45.1362 35.1445 44.1984 36.0834 43.0423 36.0834"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M42.3068 4.38457L23.2562 23.4572C22.4405 24.2771 21.1142 24.2771 20.2952 23.4572L1.21252 4.35242"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M25.5718 21.139L42.3069 37.8903" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M1.20935 37.8582L17.9445 21.1069" stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Goverment & Public affairs</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="43" height="45" viewBox="0 0 43 45" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.016 41.4431C31.016 42.6006 30.0783 43.5394 28.9221 43.5394H8.97549C7.81935 43.5394 6.88159 42.6006 6.88159 41.4431V3.42958C6.88159 2.2721 7.81935 1.33325 8.97549 1.33325H28.9221C30.0783 1.33325 31.016 2.2721 31.016 3.42958V41.4431Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M6.88159 36.2891H31.016" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M6.88159 7.39075H31.016" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M21.0123 39.8419C21.0123 40.9833 20.0874 41.9061 18.9505 41.9061C17.8104 41.9061 16.8855 40.9801 16.8855 39.8419C16.8855 38.7005 17.8104 37.7777 18.9505 37.7777C20.0874 37.7745 21.0123 38.7005 21.0123 39.8419Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M31.016 11.3358C31.016 9.1559 32.7791 7.39075 34.9565 7.39075H35.3322H36.4852C36.9348 8.82473 41.4148 22.7048 41.6717 24.4025C41.9608 26.322 41.842 30.3538 41.842 32.299C41.842 35.0191 41.842 35.7168 41.842 38.4369C41.842 40.1185 41.842 41.8 41.842 43.4816C41.842 43.5009 41.842 43.5202 41.842 43.5395"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M6.88169 17.6955L1.73365 12.5415C0.310952 11.1171 0.310952 8.81181 1.73365 7.38747C3.15313 5.96313 5.459 5.96313 6.88169 7.38747"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M6.88172 27.0133L3.78906 23.917C2.36637 22.4927 2.36637 20.1873 3.78906 18.763C4.63047 17.9206 5.78339 17.5766 6.87851 17.7309"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M6.88172 36.3309L3.78906 33.2346C2.36637 31.8103 2.36637 29.505 3.78906 28.0806C4.63047 27.2382 5.78339 26.8942 6.87851 27.0485"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>IT Secutiry audit</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8813 9.47632H23.4934" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M4.26611 13.0002H23.4933" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M4.26611 16.524H23.4933" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M4.26611 20.0511H23.4933" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M4.26611 23.5751H23.4933" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M4.26611 27.0989H23.4933" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M4.26611 30.6228H23.4933" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M4.26611 34.1499H23.4933" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M4.26611 37.6738H14.1061" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M3.26732 42.6316C2.01483 42.6316 1 41.6156 1 40.3617V7.29314C1 6.0392 2.01483 5.02319 3.26732 5.02319H24.9449C26.1974 5.02319 27.2122 6.0392 27.2122 7.29314V40.3617C27.2122 41.6156 26.1974 42.6316 24.9449 42.6316H3.26732Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M19.1996 5.02646V2.74687C19.1996 1.59904 20.1309 0.666626 21.2774 0.666626H26.3676H36.7376L43.2312 7.66294V33.0632C43.2312 34.211 42.2999 35.1434 41.1534 35.1434H30.3017H27.2091"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M43.228 8.03266H38.5809C37.3734 8.03266 36.3939 7.05202 36.3939 5.84309V0.6698"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M38.8732 28.5233C38.8732 29.9573 37.7138 31.118 36.2815 31.118C34.8492 31.118 33.6898 29.9573 33.6898 28.5233C33.6898 27.0893 34.8492 25.9286 36.2815 25.9286C37.7106 25.9286 38.8732 27.0893 38.8732 28.5233Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Political risks analysis</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="38" height="40" viewBox="0 0 38 40" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.8921 20.9803C10.4072 20.9803 10.0154 20.5881 10.0154 20.0993V12.1031C10.0154 11.6176 10.4072 11.2253 10.8921 11.2253H26.818C27.3029 11.2253 27.6947 11.6176 27.6947 12.1031V20.1026C27.6947 20.5881 27.3029 20.9835 26.818 20.9835H10.8921V20.9803Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M13.7182 33.1243H36.5776L36.5487 0.666626H3.16196C1.78422 0.666626 0.666626 1.78553 0.666626 3.16486V36.6899C0.666626 38.0693 1.78422 39.1882 3.16196 39.1882H36.7831"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M0.666626 35.6257C0.666626 34.2463 1.78422 33.1274 3.16196 33.1274H23.995"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M0.666626 24.321C2.26274 24.321 3.56017 25.6168 3.56017 27.218C3.56017 28.8159 2.26595 30.1117 0.666626 30.1117"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M3.56018 35.0984H36.2597" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M3.56018 37.1433H36.2597" stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Forensic investigations</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="44" height="45" viewBox="0 0 44 45" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M43.2986 22.5119C43.2986 34.2057 33.8279 43.6809 22.1509 43.6809C10.4675 43.6809 1 34.2057 1 22.5119C1 10.8117 10.4675 1.33325 22.1509 1.33325C33.8311 1.33325 43.2986 10.8117 43.2986 22.5119Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M35.893 22.5119C35.893 30.1094 29.7397 36.2698 22.151 36.2698C14.559 36.2698 8.40576 30.1127 8.40576 22.5119C8.40576 14.9079 14.559 8.75073 22.151 8.75073C29.7397 8.74752 35.893 14.9079 35.893 22.5119Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M28.2143 22.5087C28.2143 25.8622 25.4973 28.5791 22.151 28.5791C18.8014 28.5791 16.0876 25.8622 16.0876 22.5087C16.0876 19.1553 18.8014 16.4352 22.151 16.4352C25.4973 16.4384 28.2143 19.1553 28.2143 22.5087Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Media analysis</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M43.2986 22.1787C43.2986 33.8724 33.8279 43.3477 22.1509 43.3477C10.4675 43.3477 1 33.8724 1 22.1787C1 10.4785 10.4675 1 22.1509 1C33.8279 1 43.2986 10.4785 43.2986 22.1787Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M22.151 9.91577V22.1754H37.1551" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M1 22.1754H3.95459" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M22.151 1V3.958" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M22.151 40.3896V43.3509" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M37.1036 7.20215L35.0161 9.29526" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M9.28242 35.0555L7.19495 37.1487" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M7.19495 7.20215L9.28242 9.29526" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M35.0161 35.0555L37.1036 37.1487" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M40.344 22.1754H43.2986" stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Special situations & Litigation support</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M43.2986 21.8454C43.2986 33.5392 33.8279 43.0144 22.1509 43.0144C10.4675 43.0144 1 33.5392 1 21.8454C1 10.1452 10.4675 0.666748 22.1509 0.666748C33.8279 0.666748 43.2986 10.1484 43.2986 21.8454Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M22.1509 0.666748V23.0318H43.2986" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M6.36316 7.75305L22.1509 23.0318L7.6895 37.2977" stroke="#506A88"
+                                      stroke-miterlimit="10"/>
+                                <path d="M22.1509 6.54422L27.4788 1.34521" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M22.1509 10.6597L30.5971 2.42554" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M22.1509 14.7784L33.3365 3.86914" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M22.1509 18.8938L35.7548 5.63098" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M20.8309 24.2986L37.8744 7.68237" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M26.3516 23.0318L39.6986 10.0198" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M30.5747 23.0318L41.2112 12.6627" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M34.7979 23.0319L42.377 15.6433" stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M39.0209 23.0318L43.2986 18.8617" stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Data & analytics</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1475 29.4376C17.1475 30.6401 16.1744 31.6143 14.9733 31.6143C13.7722 31.6143 12.7991 30.6401 12.7991 29.4376C12.7991 28.2351 13.7722 27.2609 14.9733 27.2609C16.1744 27.2609 17.1475 28.2351 17.1475 29.4376Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M24.1966 29.4376C24.1966 30.6401 23.2235 31.6143 22.0224 31.6143C20.8213 31.6143 19.8483 30.6401 19.8483 29.4376C19.8483 28.2351 20.8213 27.2609 22.0224 27.2609C23.2235 27.2609 24.1966 28.2351 24.1966 29.4376Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M31.2491 29.4376C31.2491 30.6401 30.2761 31.6143 29.075 31.6143C27.8738 31.6143 26.9008 30.6401 26.9008 29.4376C26.9008 28.2351 27.8738 27.2609 29.075 27.2609C30.2728 27.2609 31.2491 28.2351 31.2491 29.4376Z"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M43.5973 13.1654V35.4887C43.5973 36.6108 42.6243 36.8423 41.9113 36.4146L37.0042 33.4277"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M37.0073 29.4376V42.5107C37.0073 43.62 36.0471 43.8483 35.3437 43.4239L27.7999 38.646"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M43.5973 23.5763V3.93128C43.5973 2.49729 42.4347 1.33337 41.0024 1.33337H3.59488C2.16255 1.33337 1 2.49729 1 3.93128V26.8172C1 28.2512 2.16255 29.4151 3.59488 29.4151H7.50007"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                                <path d="M28.0086 38.7039H9.48796C8.38963 38.7039 7.49683 37.8101 7.49683 36.7105V22.1648C7.49683 21.0652 8.38641 20.1714 9.48796 20.1714H35.0161C36.1145 20.1714 37.0073 21.0652 37.0073 22.1648V36.7105"
+                                      stroke="#506A88" stroke-miterlimit="10"/>
+                            </svg>
+                            <p>Managin digital reputation</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="index_our-team">
+        <div class="decoration decoration-1">
+            <svg stroke-width="2" fill="none" stroke="#ED493B" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 545.4 869.6">
+                <path d="M34.2,242.2C-7.9,345.1-8.8,447,42.6,493.7c69.4,63,187.1-34.3,262.8-165.8s81-270.7,11.6-310.6
+	C283.4-2.1,235.2,0.5,192.5,33.1c-70.1,53.5-123.1,127.3-155,201.3"/>
+                <path d="M25.3,668.5c16.5-66.1,55.1-141.6,112.6-212.3C198.3,382,268,327.4,332,298.8s121.9-30.9,158.9-0.8
+	s46.4,87.3,31.4,155.8c-15.1,68.4-54.5,147.8-114.9,221.9C347,749.9,277.2,804.6,213.3,833.2c-64,28.6-121.9,30.9-158.9,0.8
+	C17.4,803.9,8,746.7,23,678.2"/>
+            </svg>
+
+        </div>
+        <div class="decoration decoration-2">
+            <svg fill="none" stroke="#ED493B " stroke-width="2" ; xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 507 884.4">
+                <path d="M492,49.1c-4.6-11.9-11.6-21.7-21.1-28.7C436.2-5.3,376.7,12,315.5,58.6c-10.1,7.5-21.7,16.6-38.1,32.8
+	c-19.9,19.7-39.9,42-58.4,67.1c-85.6,115.8-111.6,241.8-58.2,281.3s166.3-22.3,251.9-138.1c69.7-94.2,99.8-195.2,79.9-250.8"/>
+                <path d="M450.2,428.4c7.3,25.3,7.6,56.1,1.1,90.1c-11.6,60.9-44.9,131.6-97,197.6c-20.9,26.5-43.3,50.1-66.2,70.7
+	c-45.7,40.9-93.7,69.1-137,81.7C107.6,881.1,69,878,41.9,856.6c-34-26.9-44-77.8-32.4-138.8c11.6-60.9,44.9-131.6,97-197.6
+	c16.3-20.6,33.4-39.5,51-56.5c5.4-5.2,10.8-10.2,16.2-15.1c4.7-4.2,9.4-8.2,14.2-12.1c43.6-36,88.5-60.3,129-70.6
+	c40.5-10.3,76.3-6.4,102,13.8c14.6,11.6,24.8,27.6,30.7,46.9"/>
+            </svg>
+        </div>
+        <div class="decoration decoration-3"></div>
+        <div class="container">
+            <div class="section__header">
+                <a href="./team.html">learn more</a>
+                <div class="title">
+                    <h2 class="h1">Our team</h2>
+                </div>
+            </div>
+            <div class="section__content-with-indent">
+                <div class="team">
+                    <div class="ceo">
+                        <div class="person">
+                            <div class="description">
+                                <p>Oleg Leonov,</p>
+                                <span>CEO</span>
+                            </div>
+                            <div class="photo">
+                                <img src="./images/worker-1.png" alt="Oleg Leonov, CEO">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="other">
+                        <div class="person">
+                            <div class="photo">
+                                <img src="./images/worker-2.png" alt="Oleg Leonov, CEO">
+                            </div>
+                            <div class="description">
+                                <p>Olga Lundqvist</p>
+                                <span>Senior director</span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo">
+                                <img src="./images/worker-3.png" alt="Oleg Leonov, CEO">
+                            </div>
+                            <div class="description">
+                                <p>Dmitry Chmyr</p>
+                                <span>Head of IT solutions</span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo">
+                                <img src="./images/worker-4.png" alt="Oleg Leonov, CEO">
+                            </div>
+                            <div class="description">
+                                <p>Venera Masumova</p>
+                                <span>Senior director</span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo">
+                                <img src="./images/worker-5.png" alt="Oleg Leonov, CEO">
+                            </div>
+                            <div class="description">
+                                <p>Victoria Afonina</p>
+                                <span>Senior director</span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo">
+                                <img src="./images/worker-7.png" alt="Oleg Leonov, CEO">
+                            </div>
+                            <div class="description">
+                                <p>Evgenia Efimova</p>
+                                <span>Senior director</span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo">
+                                <img src="./images/worker-6.png" alt="Oleg Leonov, CEO">
+                            </div>
+                            <div class="description">
+                                <p>Andrey Beletskiy</p>
+                                <span>Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="analytics-and-news">
+        <div class="container">
+            <div class="section__header">
+                <a href="./analytics.html">learn more</a>
+                <div class="title">
+                    <h2 class="h1">Analytics & News</h2>
+                </div>
+            </div>
+        </div>
+        <div class="pre-footer">
+            <div class="pre-footer__bg"></div>
+            <div class="container">
+                <div class="pre-footer__content">
+                    {{> ../../components/post-card/post-card image="./images/post-1.png" date="September 28, 2020" title="Key Takeaways from the New WEF/IBC ESG Disclosure Framework" }}
+                    {{> ../../components/post-card/post-card image="./images/post-2.png" date="September 28, 2020" title="Macro: Weekly Political Compass 9.28.20" }}
+                    {{> ../../components/post-card/post-card image="./images/post-3.png" date="September 28, 2020" title="Thailand: Tensions are Rising and the Ball is in Prayuth’s Hands" }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{{/../../components/layout/layout}}

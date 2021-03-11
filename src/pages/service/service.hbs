@@ -1,0 +1,105 @@
+{{#> ../../components/layout/layout
+        title="Service page"
+        keywords="keyword 1, keyword 2"
+        description="Service page description"
+}}
+
+
+    <script>
+        // !TODO: Убрать ВЕСЬ блок кода, при заливке на Битрикс или другую CMS!
+        // При этом, необходимо чтобы на services странице в хедере у пункта меню services
+        // был класс active. Как у обычного меню, так и раскрывающегося мобльного
+
+        const desktopLinks = document.querySelectorAll("header nav a");
+        desktopLinks.forEach((link, i) => {
+            if (i === 0) {
+                link.classList.add("active");
+            }
+        });
+
+        const mobileLinks = document.querySelectorAll("#mobile-menu nav a");
+        mobileLinks.forEach((link, i) => {
+            if (i === 0) {
+                link.classList.add("active");
+            }
+        });
+
+    </script>
+
+    <section class="simple-page service-page">
+
+        <div class="simple-page__decoration decoration-1"></div>
+        <div class="simple-page__decoration decoration-2"></div>
+
+        <div class="container">
+            <div class="section__header">
+                <a href="#">go back</a>
+                <div class="title">
+                    <h1>Goverment & Public affairs</h1>
+                </div>
+            </div>
+            <div class="section__top-block">
+                <a class="section__top-block-link"></a>
+                <div class="section__top-block-content">
+                    <div class="section__top-block-main-part">
+                        <div class="content">
+                            <p class="large">
+                                Elaboration of GR strategy of the brand based on the business needs and current political agenda
+                            </p>
+                            <br>
+                            <br>
+                            <p>
+                                We conduct analysis of ongoing legislative activities, strategic planning of communications with media, regulators, officials and other stakeholders, organize participation in relevant public events using established contacts with major Russian media, relationships with state bodies, different professional associations and NGOs and large law firms
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section__top-block-secondary-part">
+                        <div class="content">
+                            <div class="other">
+                                <div class="other-container">
+                                    <a class="post-card">
+                                        <div class="image-container">
+                                            <div class="border"></div>
+                                            <div class="image">
+                                                <img src="./images/post-1.png" alt="Post 1">
+                                            </div>
+                                        </div>
+                                        <div class="date">September 28, 2020</div>
+                                        <h3>Key Takeaways from the New WEF/IBC ESG Disclosure Framework</h3>
+                                    </a>
+
+                                    <ul class="other-links">
+                                        <li><a href="#">More about GR Strategy</a></li>
+                                        <li><a href="#">Goverment & Public affairs fresh usecases & reviews</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="pre-footer">
+            <div class="pre-footer__bg"></div>
+            <div class="container">
+                <div class="pre-footer__content">
+                    {{> ../../components/post-card/post-card image="./images/post-1.png" date="September 28, 2020" title="Key Takeaways from the New WEF/IBC ESG Disclosure Framework" }}
+                    {{> ../../components/post-card/post-card image="./images/post-2.png" date="September 28, 2020" title="Macro: Weekly Political Compass 9.28.20" }}
+                    {{> ../../components/post-card/post-card image="./images/post-3.png" date="September 28, 2020" title="Thailand: Tensions are Rising and the Ball is in Prayuth’s Hands" }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+{{/../../components/layout/layout}}
+
+
